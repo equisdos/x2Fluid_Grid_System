@@ -1,0 +1,268 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*	x2Flex Grid System v1.1 | GPL 2003 equisdos | www.equisdos.com
+//	Autores:
+//			- Eugenio Lacuesta
+//			- Camilo Pifano
+*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*SIZE REFERENCE:--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*
+LARGE DEVICES	:	Desktops >= 992px
+MEDIUM DEVICES	:	Tablets 768px to 991px
+SMALL DEVICES	:	Phones <= 767px
+*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*X2-FLUID:--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.x2-fluid:before, .x2-fluid:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.x2-fluid:after {
+	clear: both;
+}
+
+.x2-fluid [class*="span"] {
+	display: block;
+	width: 100%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*SPAN COLUMNS:----------------------------------------------------------------------------------------------------------------------------------------------*/
+.x2-fluid .span1 {
+	width: 8.333333333333333%;
+}
+
+.x2-fluid .span2 {
+	width: 16.66666666666667%;
+}
+
+.x2-fluid .span3 {
+	width: 25%;
+}
+
+.x2-fluid .span4 {
+	width: 33.33333333333333%;
+}
+
+.x2-fluid .span5 {
+	width: 41.66666666666667%;
+}
+
+.x2-fluid .span6 {
+	width: 50%;
+}
+
+.x2-fluid .span7 {
+	width: 58.33333333333333%;
+}
+
+.x2-fluid .span8 {
+	width: 66.66666666666667%;
+}
+
+.x2-fluid .span9 {
+	width: 75%;
+}
+
+.x2-fluid .span10 {
+	width: 83.33333333333333%;
+}
+
+.x2-fluid .span11 {
+	width: 91.66666666666667%;
+}
+
+.x2-fluid .span12 {
+	width: 100%;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*OFFSET COLUMNS:--------------------------------------------------------------------------------------------------------------------------------------------*/
+.x2-fluid .offset1 {
+	margin-left: 8.333333333333333%;
+}
+
+.x2-fluid .offset2 {
+	margin-left: 16.66666666666667%;
+}
+
+.x2-fluid .offset3 {
+	margin-left: 25%;
+}
+
+.x2-fluid .offset4 {
+	margin-left: 33.33333333333333%;
+}
+
+.x2-fluid .offset5 {
+	margin-left: 41.66666666666667%;
+}
+
+.x2-fluid .offset6 {
+	margin-left: 50%;
+}
+
+.x2-fluid .offset7 {
+	margin-left: 58.33333333333333%;
+}
+
+.x2-fluid .offset8 {
+	margin-left: 66.66666666666667%;
+}
+
+.x2-fluid .offset9 {
+	margin-left: 75%;
+}
+
+.x2-fluid .offset10 {
+	margin-left: 83.33333333333333%;
+}
+
+.x2-fluid .offset11 {
+	margin-left: 91.66666666666667%;
+}
+
+.x2-fluid .offset12 {
+	margin-left: 100%;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*RESPONSIVE:------------------------------------------------------------------------------------------------------------------------------------------------*/
+.x2-fluid .hidden{
+	display: none;
+	visibility: hidden;
+}
+
+.visible-ld, .visible-md, .visible-sd, .hidden-ld, .hidden-md, .hidden-sd{
+	display: none !important;
+}
+
+/*Large Devices (Desktops >= 992px)*/
+@media (min-width: 992px){
+	.visible-ld{
+		display: inherit !important;
+	}
+	
+	.visible-md, .visible-sd{
+		display: none !important;
+	}
+	
+	.hidden-ld{
+		display: none !important;
+	}
+	
+	.hidden-md, .hidden-sd{
+		display: inherit !important;
+	}
+}
+
+/*Medium Devices (Tablets 768px to 991px)*/
+@media (min-width: 768px) and (max-width: 991px){
+	.visible-md{
+		display: inherit !important;
+	}
+	
+	.visible-ld, .visible-sd{
+		display: none !important;
+	}
+	
+	.hidden-md{
+		display: none !important;
+	}
+	
+	.hidden-ld, .hidden-sd{
+		display: inherit !important;
+	}
+	
+	.x2-fluid .span1 {
+		width: 16.66666666666667%;
+	}
+	
+	.x2-fluid .span11 {
+		width: 83.33333333333333%;
+	}
+	
+	.x2-fluid .offset1 {
+		margin-left: 4.166666666666667%;
+	}
+		
+	.x2-fluid .offset2 {
+		margin-left: 8.333333333333333%;
+	}
+
+	.x2-fluid .offset3 {
+		margin-left: 12.5%;
+	}
+
+	.x2-fluid .offset4 {
+		margin-left: 16.66666666666667%;
+	}
+
+	.x2-fluid .offset5 {
+		margin-left: 20.83333333333333%;
+	}
+
+	.x2-fluid .offset6 {
+		margin-left: 25%;
+	}
+
+	.x2-fluid .offset7 {
+		margin-left: 29.16666666666667%;
+	}
+
+	.x2-fluid .offset8 {
+		margin-left: 33.33333333333333%;
+	}
+
+	.x2-fluid .offset9 {
+		margin-left: 37.5%;
+	}
+
+	.x2-fluid .offset10 {
+		margin-left: 41,66666666666667%;
+	}
+
+	.x2-fluid .offset11 {
+		margin-left: 45,83333333333333%;
+	}
+
+	.x2-fluid .offset12 {
+		margin-left: 50%;
+	}
+}
+
+/*Small Devices (Phones <= 767px)*/
+@media (max-width: 767px){
+	.visible-sd{
+		display: inherit !important;
+	}
+	
+	.visible-ld, .visible-md{
+		display: none !important;
+	}
+	
+	.hidden-sd{
+		display: none !important;
+	}
+	
+	.hidden-ld, .hidden-md{
+		display: inherit !important;
+	}
+	
+	.x2-fluid .span1, .x2-fluid .span2, .x2-fluid .span3, .x2-fluid .span4, .x2-fluid .span5, .x2-fluid .span6, .x2-fluid .span7, .x2-fluid .span8, .x2-fluid .span9, .x2-fluid .span10, .x2-fluid .span11 {
+		width: 100%;
+	}
+	
+	.x2-fluid .offset1, .x2-fluid .offset2, .x2-fluid .offset3, .x2-fluid .offset4, .x2-fluid .offset5, .x2-fluid .offset6, .x2-fluid .offset7, .x2-fluid .offset8, .x2-fluid .offset9, .x2-fluid .offset10, .x2-fluid .offset11, .x2-fluid .offset12{
+		margin-left: 0%;
+	}
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
